@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Programming on Python - peantaster</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">peantaster</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Programming on Python</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1660915075356"
+                  >2022-08-19 16:17</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1676803222708"
+                  >2023-02-19 13:40</time
+                ></span
+              >
+            </div>
+            
+            <div>
+              Keywords: 
+              <span class="keyword">programming</span>
+              
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h1 id="links">Links</h1>
+<p><a title="https://learnpython.org/" href="https://learnpython.org/">https://learnpython.org/</a> - Изучить питон</p>
+<p><a title="https://docs.python.org/3/" href="https://docs.python.org/3/">https://docs.python.org/3/</a> - docs</p>
+<p><a title="https://learnxinyminutes.com/docs/python/" href="https://learnxinyminutes.com/docs/python/">https://learnxinyminutes.com/docs/python/</a> - Немного о питне</p>
+<h1 id="правила-написания">Правила написания</h1>
+<p><a title="https://github.com/zblurx/certsync/blob/main/certsync/entry.py" href="https://github.com/zblurx/certsync/blob/main/certsync/entry.py">https://github.com/zblurx/certsync/blob/main/certsync/entry.py</a> - Отличный пример программы, где можно посмотреть, как правильно пишутся Argparse и Logging</p>
+<h1 id="компиляторы-и-интерпретаторы-python">Компиляторы и интерпретаторы Python</h1>
+<h2 id="pypy">Pypy</h2>
+<h2 id="cpython">Cpython</h2>
+<h2 id="ipython">Ipython</h2>
+<p>Удобный интерпритатор с автодополнением<br />
+<img src="/_resources/a43e44a83ec64fe4a1e73e8eb6cbda65.png" /></p>
+<h1 id="libraries-modules">Libraries | Modules</h1>
+<h2 id="библиотеки-для-работы-с-сетью">Библиотеки для работы с сетью</h2>
+<h3 id="scapy">Scapy</h3>
+<h3 id="pyshark">PyShark</h3>
+<h2 id="url-parsing">url parsing</h2>
+<p><a title="https://docs-python.ru/standart-library/modul-urllib-parse-python/funktsija-urlparse-modulja-urllib-parse/" href="https://docs-python.ru/standart-library/modul-urllib-parse-python/funktsija-urlparse-modulja-urllib-parse/">https://docs-python.ru/standart-library/modul-urllib-parse-python/funktsija-urlparse-modulja-urllib-parse/</a></p>
+<div><pre class="hljs"><code><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> urllib.parse <span class="hljs-keyword">import</span> urlparse
+<span class="hljs-meta">&gt;&gt;&gt; </span>url = urlparse(<span class="hljs-string">'https://docs-python.ru:80/search/'</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>url
+<span class="hljs-comment"># ParseResult(scheme='https', netloc='docs-python.ru:80', path='/search/',</span>
+<span class="hljs-comment">#             params='', query='', fragment='')</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>url.scheme
+<span class="hljs-comment"># 'https'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>url.port
+<span class="hljs-comment"># 80</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>url.geturl()
+<span class="hljs-comment"># 'http://docs-python.ru:80/search/'</span></code></pre></div>
+<h2 id="customtkinter">Customtkinter</h2>
+<p><a title="https://www.youtube.com/watch?v=iM3kjbbKHQU&amp;ab_channel=NeuralNine" href="https://www.youtube.com/watch?v=iM3kjbbKHQU&amp;ab_channel=NeuralNine">https://www.youtube.com/watch?v=iM3kjbbKHQU&amp;ab_channel=NeuralNine</a> - Обзор библиотеки<br />
+Плюсы:</p>
+<ul>
+<li>Кода немного</li>
+<li>выглядит современно</li>
+<li>Есть много кнопочек<br />
+<img src="/_resources/bccfe7f47c0f44e4ab45c7b12f9d4839.png" /></li>
+</ul>
+<h2 id="библиотека-визуализации-данных-dash">Библиотека визуализации данных Dash</h2>
+<p><a title="https://www.youtube.com/watch?v=mvVt-raJIpo&amp;ab_channel=%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC%D0%BC%D0%B8%D1%80%D0%98%D0%A2%2F%D0%9E%D0%BB%D0%B5%D0%B3%D0%A8%D0%BF%D0%B0%D0%B3%D0%B8%D0%BD%2F%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" href="https://www.youtube.com/watch?v=mvVt-raJIpo&amp;ab_channel=%D0%98%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC%D0%BC%D0%B8%D1%80%D0%98%D0%A2%2F%D0%9E%D0%BB%D0%B5%D0%B3%D0%A8%D0%BF%D0%B0%D0%B3%D0%B8%D0%BD%2F%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">https://www.youtube.com/watch?v=mvVt-raJIpo&amp;ab_channel=ИзучаеммирИТ%2FОлегШпагин%2FПрограммирование</a> - Видеоролик, где можно посмотреть как с ней работать</p>
+<p><a title="https://dash.plotly.com/" href="https://dash.plotly.com/">https://dash.plotly.com/</a> - Ссылка на сайт библиотеки</p>
+<p>Плюшки:</p>
+<ul>
+<li>Умеет делать 3D</li>
+<li>Умеет поднимать сервер для отображения графикоов</li>
+<li>Есть готовые примеры на сайте</li>
+<li>Умеет обновлять данные в реальном времени</li>
+</ul>
+<p><img src="/_resources/64f4399ce11b4865b94940bc5c5560b9.png" /></p>
+<h2 id="getpass">getpass</h2>
+<p>Getpass - Модуль, который позволяет вводить пароль, однако при вводе пароль не будет отображаться в терминале</p>
+<h2 id="grequests">grequests</h2>
+<p>Это асинхрнноые запросы на сайт. Позволяет быстро делать много запросов.</p>
+<h2 id="запускаемые-модули">Запускаемые модули</h2>
+<h3 id="ftp">FTP</h3>
+<p><code>python3 -m pyftpdlib -p 21 -d .\Desktop\</code></p>
+<p><code>-d</code> указывает на папку, которую шарим через ftp</p>
+<h3 id="http-web-server">HTTP WEB SERVER</h3>
+<p><code>python3 -m http.server 80</code></p>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
