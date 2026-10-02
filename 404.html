@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'">
+  <title>404 — ItemNotFoundException</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <main class="window">
+    <header class="titlebar"><span class="titlebar__icon">&gt;_</span><span class="titlebar__title">Windows PowerShell — 404</span></header>
+    <section class="terminal">
+      <div class="output">
+        <div class="line">PS C:\Users\PeanTaster&gt; Get-Item .\эта-страница</div>
+        <div class="line error">Get-Item : Не удаётся найти путь, так как он не существует.</div>
+        <div class="line error">    + CategoryInfo          : ObjectNotFound: (404) [Get-Item], ItemNotFoundException</div>
+        <div class="line error">    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand</div>
+        <div class="line">&nbsp;</div>
+        <div class="line">PS C:\Users\PeanTaster&gt; Set-Location <a href="/">~</a></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

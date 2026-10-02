@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="PeanTaster — интерактивный терминал PowerShell в браузере">
+  <title>PS C:\Users\PeanTaster&gt;</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23012456'/%3E%3Cpath d='M3 4l5 4-5 4' stroke='%23fff' stroke-width='2' fill='none'/%3E%3Cpath d='M9 12h4' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <main class="window" aria-label="Терминал">
+    <header class="titlebar">
+      <span class="titlebar__icon" aria-hidden="true">&gt;_</span>
+      <span class="titlebar__title">Windows PowerShell — PeanTaster</span>
+      <span class="titlebar__buttons" aria-hidden="true">
+        <span>&#8212;</span><span>&#9744;</span><span class="close">&#10005;</span>
+      </span>
+    </header>
+    <section id="terminal" class="terminal" tabindex="0">
+      <div id="output" class="output" role="log" aria-live="polite"></div>
+      <div class="input-line">
+        <span id="prompt" class="prompt"></span>
+        <input id="input" class="input" type="text" autocomplete="off" autocapitalize="off"
+               spellcheck="false" aria-label="Команда" maxlength="200">
+      </div>
+    </section>
+    <nav class="quick" aria-label="Быстрые команды">
+      <button type="button" data-cmd="Get-Help">help</button>
+      <button type="button" data-cmd="Get-About">about</button>
+      <button type="button" data-cmd="Get-Projects">projects</button>
+      <button type="button" data-cmd="Get-Fortune">fortune</button>
+      <button type="button" data-cmd="Start-Matrix">matrix</button>
+      <button type="button" data-cmd="Start-Snake">snake</button>
+    </nav>
+  </main>
+  <canvas id="fx" class="fx" hidden></canvas>
+  <noscript><p class="noscript">Включите JavaScript, чтобы запустить терминал.</p></noscript>
+</body>
+</html>
